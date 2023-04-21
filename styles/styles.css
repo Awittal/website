@@ -27,18 +27,18 @@ a:link {
     overflow: hidden;
     background-color: #333;
     font-family: Arial;
-    background-color: #70512B;
+    background-color: #70604C;
   }
   
   /* Links inside the navbar */
   .navbar a {
     float: left;
     font-size: 16px;
-    color: white;
+    color: #EFCCA2;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    background-color: #70512B;
+    background-color: #70604C;
   }
   
   /* The dropdown container */
@@ -53,9 +53,9 @@ a:link {
     font-size: 16px;
     border: none;
     outline: none;
-    color: white;
+    color: #EFCCA2;
     padding: 14px 16px;
-    background-color: #70512B;
+    background-color: #70604C;
     font-family: inherit; /* Important for vertical align on mobile phones */
     margin: 0; /* Important for vertical align on mobile phones */
   }
@@ -78,7 +78,7 @@ a:link {
   /* Links inside the dropdown */
   .dropdown-content a {
     float: none;
-    color: black;
+    color: #EFCCA2;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
