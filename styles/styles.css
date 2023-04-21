@@ -1,5 +1,5 @@
 .bodystyle {
-  background-color: bisque;
+  background-color: #EFCCA2;
 }
 
 .bodystyle h1 {
@@ -27,7 +27,7 @@ a:link {
     overflow: hidden;
     background-color: #333;
     font-family: Arial;
-    background-color: orange;
+    background-color: #70512B;
   }
   
   /* Links inside the navbar */
@@ -38,7 +38,7 @@ a:link {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    background-color: orange;
+    background-color: #70512B;
   }
   
   /* The dropdown container */
@@ -55,21 +55,21 @@ a:link {
     outline: none;
     color: white;
     padding: 14px 16px;
-    background-color: orange;
+    background-color: #70512B;
     font-family: inherit; /* Important for vertical align on mobile phones */
     margin: 0; /* Important for vertical align on mobile phones */
   }
   
   /* Add a red background color to navbar links on hover */
   .navbar a:hover, .dropdown:hover .dropbtn {
-    background-color: red;
+    background-color: #F2AF5C;
   }
   
   /* Dropdown content (hidden by default) */
   .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
+    background-color: pink;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
@@ -87,7 +87,7 @@ a:link {
   
   /* Add a grey background color to dropdown links on hover */
   .dropdown-content a:hover {
-    background-color: #ddd;
+    background-color: #BDA280;
   }
   
   /* Show the dropdown menu on hover */
