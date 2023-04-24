@@ -2,26 +2,11 @@
   background-color: #EFCCA2;
 }
 
-.bodystyle h1 {
-  color: brown;
-  text-align: center;
-}
-
 .bodystyle p{
   color: #912317;
   text-align: center;
 }
 
-.bodystyle ul{
-  text-align: center;
-}
-
-a:link {
-  color: green;
-  background-color: transparent;
-  text-decoration: none;
-  font-weight: bold;
-}
 
 .navbar {
     overflow: hidden;
