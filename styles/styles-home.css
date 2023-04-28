@@ -1,0 +1,23 @@
+
+
+.float-left {
+    width: 45.3%;
+    float: left;
+    padding: 20px;
+    border: 2px solid red
+}
+
+.float-left h1 {
+    text-decoration: underline;
+}
+
+.float-right{
+    width: 50%;
+    float: right;
+    padding: 20px;
+    border: 2px solid red
+}
+
+.float-container {
+    background-color: antiquewhite;
+}
