@@ -3,8 +3,11 @@
 .float-left {
     width: 20%;
     float: left;
-    margin-top: 5%;
     margin-left: 20%;
+    background-color: rgb(109, 46, 120);
+    border-radius: 25px;
+    margin-top: 10px;
+    padding-left: 5px;
 }
 
 .side h1 {
@@ -13,18 +16,19 @@
 }
 
 .side {
-    background-color: #917FB3;
+    background-color: rgba(0, 0, 0,.7);
     overflow: hidden;
     padding-bottom: 30px;
-    margin: 30px;
+    margin-top: 150px;
+    margin-bottom: 30px;
     margin-right: 0;
     margin-left: 0;
 }
 
+
 .float-right{
     width: 20%;
     margin-right: 25%;
-    margin-top: 5%;
     float: right;
     padding: 20px;
 }
@@ -34,5 +38,14 @@
 }
 
 .whatsnew {
-    margin: auto;
+    height: 400px; /* or any value */
+    overflow-y: auto;
+}
+
+.inner {
+    position:relative;
+  }
+
+.thenews {
+    
 }
