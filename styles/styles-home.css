@@ -4,10 +4,7 @@
     width: 20%;
     float: left;
     margin-left: 20%;
-    background-color: rgb(109, 46, 120);
-    border-radius: 25px;
     margin-top: 10px;
-    padding-left: 5px;
 }
 
 .side h1 {
@@ -44,8 +41,18 @@
 
 .inner {
     position:relative;
+    border-bottom-style: solid;
+    border-width: 1px;
+    border-spacing: 10px;
   }
 
-.thenews {
-    
+.newscontent{
+    background-color: rgba(255, 255, 255, 0.811);
+    border-radius: 25px;
+    padding: 10px;
+}
+
+
+.float-left h2{
+    color: black !important;
 }
