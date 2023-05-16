@@ -9,17 +9,18 @@
 }
 
 .bodystyle p {
-  color: #912317;
+  color: #000000;
   text-align: center;
 }
 
 h1 {
-  color: #f6eeee;
   font-size: 35px;
+  font-weight: bold;
+  color: #FDE2F3;
 }
 
 h2 {
-  color: #f6eeee;
+  color: #f5f50e;
   font-size: 20px;
 }
 

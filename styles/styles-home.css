@@ -7,10 +7,6 @@
     margin-top: 10px;
 }
 
-.side h1 {
-    font-weight: bold;
-    color: #FDE2F3;
-}
 
 .side {
     background-color: rgba(0, 0, 0,.7);
@@ -55,4 +51,9 @@
 
 .float-left h2{
     color: black !important;
+}
+
+.thenews{
+    font-size: small;
+    margin-left: -250px;
 }
