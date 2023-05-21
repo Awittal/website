@@ -11,8 +11,8 @@ if ($conn->connect_error) {
 }
 
 // Benutzername und Passwort aus dem Formular abrufen
-$username = $_POST['dtUsername'];
-$password = $_POST['dtPasswort'];
+$username = $_POST['username'];
+$password = $_POST['password'];
 
 // Benutzer in der Datenbank überprüfen
 $sql = "SELECT * FROM tblUsers_ChristianBeats WHERE dtUsername = '$username'";
@@ -21,10 +21,22 @@ $result = $conn->query($sql);
 if ($result->num_rows == 1) {
     // Benutzer gefunden, Überprüfung des Passworts
     $row = $result->fetch_assoc();
-    if (password_verify($password, $row['dtPasswort'])) {
+      if ($password == $row['dtPasswort']){
         // Passwort stimmt überein, Benutzer erfolgreich eingeloggt
         echo "Login erfolgreich!";
         // Weitere Aktionen durchführen oder zur Startseite weiterle
+       header("Location: ../html/vuiewfv.html");
+        exit();
+    } else {
+        // Passwort ist falsch
+        echo "Falsches Passwort!";
     }
+} else {
+    // Benutzer nicht gefunden
+    echo "Benutzer nicht gefunden!";
+    header("Location: ../html/home.html");
+        exit();
 }
+
+$conn->close();
 ?>

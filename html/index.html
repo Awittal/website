@@ -1,55 +1,63 @@
-
 <!DOCTYPE html>
 <html>
 
 <head>
-    <link rel="stylesheet" href="../styles/styles-main.css">
-    <title>Über mich</title>
-    <meta charset="UTF-8">
+  <link rel="stylesheet" href="../styles/styles-main.css">
+  <link rel="stylesheet" href="../styles/styles-index.css">
+  <title>ChristianBeats</title>
+  <meta charset="UTF-8">
 </head>
 
 <body class="bodystyle">
 
   <!-- navigation barr -->
 
-  
-    <div class="navbar">
-        <a href="../html/home.html">Home</a>
-        <a href="../html/albums.html">Albums</a>
-        <a href="../html/aboutUs.html">About us</a>
-        <div class="dropdown">
-          <button class="dropbtn">Our Youtube Channels
-            <i class="fa fa-caret-down"></i>
-          </button>
-          <div class="dropdown-content">
-            <a href="https://www.youtube.com/channel/UCJD0vzkA41L_tgzouGlFLlQ" target="_blank">SW Bear Animation</a>
-            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Yannick</a>
-            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Noe</a>
-            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Oliver</a>
-          </div>
-        </div>
+
+  <div class="navbar">
+    <a href="../html/home.html">Home</a>
+    <a href="../html/albums.html">Albums</a>
+    <a href="../html/aboutUs.html">About us</a>
+    <div class="dropdown">
+      <button class="dropbtn">Our Youtube Channels
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="https://www.youtube.com/channel/UCJD0vzkA41L_tgzouGlFLlQ" target="_blank">SW Bear Animation</a>
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Yannick</a>
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Noe</a>
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Oliver</a>
       </div>
+    </div>
+  </div>
 
-<!--text -->
-      <p>
-        Why did the programmer quit his job? He didn't get arrays. Why did the JavaScript developer wear glasses? Because he couldn't C#. Why do programmers always mix up Halloween and Christmas? Because Oct 31 equals Dec 25. Why do Java developers wear glasses? Because they can't C#. Why do programmers prefer dark mode? Because light attracts bugs. Why do programmers always mix up their Halloween and Christmas decorations? Because they always end up with ghosts in their code. What's a programmer's favorite place to hang out? The Foo Bar. Why do programmers always mix up their left and right? Because they're always working with the "wrong" side of the code.
-      </p>
-
-      <div style="color: #ffffff;">
-
-
-        <h2 >Login</h2>
-    <form action="../php/login.php" method="POST">
-        <label for="username">Benutzername:</label>
-        <input type="text" name="username" id="username" required><br><br>
-        
-        <label for="password">Passwort:</label>
-        <input type="password" name="password" id="password" required><br><br>
-        
-        <input type="submit" value="Login">
-    </form>
+  <!--text -->
+  <div class="side">
+    <div class="float-left">
+      <div class="newscontent">
+        <h1>Hello and Wellcome to our Webside</h1>
+        <p>
+          If you a user pleace select continue:
+        </p><br>
+        <button class="button" onclick="window.location.href = '../html/home.html';">Continue</button>
       </div>
-    
+    </div>
+
+    <div class="float-right">
+      <div class="newscontent">
+        <h2>If you an admin please login here:</h2>
+
+        <form action="../php/login.php" method="POST">
+          <label for="username">Benutzername:</label>
+          <input type="text" name="username" id="username" required><br><br>
+
+          <label for="password">Passwort:</label>
+          <input type="password" name="password" id="password" required><br><br>
+
+          <input type="submit" value="Login">
+        </form>
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>
