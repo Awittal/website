@@ -26,7 +26,7 @@ if ($result && $result->num_rows > 0) {
 }
 
 // SQL-Abfrage ausführen
-$sql = "SELECT dtVideo, dtImage, dtLikes, dtDislikes FROM tblVideos_ChristianBeats";
+$sql = "SELECT * FROM tblVideos_ChristianBeats";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
@@ -36,43 +36,14 @@ if ($result->num_rows > 0) {
         $dtImage[] = $row["dtImage"];
         $dtLikes[] = $row["dtLikes"];
         $dtDislikes[] = $row["dtDislikes"];
+        $id2[] = $row["idImage_Video"];
     }
 } else {
     echo "Keine Ergebnisse gefunden.";
 }
 
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    // Überprüfe, ob der Like-Button geklickt wurde
-    if (isset($_POST['like'])) {
-        $id = $_POST['like']; // Die ID des Elements, das geliked wurde
-        $dtLikes[$id-1] += 1 ; // Füge die ID zum $dtLikes Array hinzu
-
-        // Aktualisiere den Wert in der Datenbank
-        $stmt = $conn->prepare('UPDATE tblVideos_ChristianBeats SET dtLikes = dtLikes+1 WHERE idImage_Video = ?');
-        $stmt->bind_param('i', $id);
-        $stmt->execute();
-        $stmt->close();
-
-
-    }
-
-    // Überprüfe, ob der Dislike-Button geklickt wurde
-    if (isset($_POST['dislike'])) {
-        $id = $_POST['dislike']; // Die ID des Elements, das dislikt wurde
-        $dtDislikes[$id-1] += 1 ; // Füge die ID zum $dtDislikes Array hinzu
-
-        // Aktualisiere den Wert in der Datenbank
-        $stmt = $conn->prepare('UPDATE tblVideos_ChristianBeats SET dtDislikes = dtDislikes+1 WHERE idImage_Video = ?');
-        $stmt->bind_param('i', $id);
-        $stmt->execute();
-        $stmt->close();
-    }
-}
-
-
-
-// Schließe die Verbindung zur Datenbank
 $conn->close();
+
 ?>
 <script>
 function openVideo(videoUrl) {
@@ -99,9 +70,9 @@ function openVideo(videoUrl) {
                 echo "<a onclick='openVideo(\"" . $dtVideo[$id] . "\")'><img src='" . $dtImage[$id] . "' alt='Bild $id' /></a>";
 //                echo "<a href='" . $dtVideo[$id] . "'><img src='" . $dtImage[$id] . "' alt='Bild $id' /></a>";
                 echo "<br />";
-                echo "<form method='post'>";
-                echo "<button type='submit' name='like' value='$counter'>Like</button>";
-                echo "<button type='submit' name='dislike' value='$counter'>Dislike</button>";
+                echo '<form method="post" action="databank.php">';
+                echo "<button type='submit' name='like' value='" . $id2[$id] . "'>Like</button>";
+                echo "<button type='submit' name='dislike' value='" . $id2[$id] . "'>Dislike</button>";
                 echo "</form>";
                 echo "<br />";
                 echo "<span class='likes'>Likes: </span>";
