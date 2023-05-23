@@ -83,6 +83,14 @@
   font-size: 14px;
   border-radius: 5px;
   position: relative;
-  left: 25%
-  
+  left: 25%;
+  cursor: pointer;
+}
+
+.button:hover {background-color: #0b0f0b}
+
+.button:active {
+  background-color: #0b0f0b;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
