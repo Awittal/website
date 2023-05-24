@@ -67,9 +67,9 @@ function openVideo(videoUrl) {
         <?php
         // Erstelle das Grid von 5 * 2 Bildern
         $counter = 0;
-        for ($i = 0; $i < ceil($anzahlRows / 5); $i++) {
+        for ($i = 0; $i < ceil($anzahlRows / 3); $i++) {
             echo "<tr>";
-            for ($j = 0; $j < 5 && $counter < $anzahlRows; $j++) {
+            for ($j = 0; $j < 3 && $counter < $anzahlRows; $j++) {
                 $counter++;
                 $id = $counter - 1;
                 echo "<td>";

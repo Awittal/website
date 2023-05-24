@@ -5,3 +5,11 @@
 .images span {
     color:#ffff;
 }
+
+.images {
+    overflow: hidden;
+
+}
+.images table{
+    overflow: hidden;
+}
