@@ -54,7 +54,13 @@ function openVideo(videoUrl) {
 
 <!DOCTYPE html>
 <html>
+    <head>
+    <link rel="stylesheet" href="../styles/styles-albums.css">
+</head>
+
+
 <body>
+    <div class="images">
     <h1>Bilder Liken und Disliken</h1>
     <table>
         <link rel="stylesheet" href="../styles/styles-likeDislike.css" />
@@ -92,5 +98,7 @@ function openVideo(videoUrl) {
         }
         ?>
     </table>
+
+    </div>
 </body>
 </html>

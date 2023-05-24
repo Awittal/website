@@ -119,3 +119,13 @@ p{
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
+.side {
+  background-color: rgba(0, 0, 0,.7);
+  overflow: hidden;
+  padding-bottom: 30px;
+  margin-top: 150px;
+  margin-bottom: 30px;
+  margin-right: 0;
+  margin-left: 0;
+}
