@@ -23,7 +23,6 @@
     width: 20%;
     margin-right: 25%;
     float: right;
-    padding: 20px;
 }
 
 .scrolldiv {
@@ -43,7 +42,7 @@
   }
 
 .newscontent{
-    background-color: rgba(255, 255, 255, 0.811);
+    background-color:white;
     border-radius: 25px;
     padding: 10px;
 }
@@ -55,5 +54,5 @@
 
 .thenews{
     font-size: small;
-    margin-left: -250px;
+    padding-left: -250px;
 }

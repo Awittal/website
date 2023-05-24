@@ -9,8 +9,12 @@
 }
 
 .bodystyle p {
-  color: #000000;
   text-align: center;
+  color:#333;
+}
+
+.instr{
+  color: white !important;
 }
 
 h1 {
