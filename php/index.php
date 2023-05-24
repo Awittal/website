@@ -8,6 +8,7 @@ $dtVideo = array();
 $dtImage = array();
 $dtLikes = array();
 $dtDislikes = array();
+$dtTitel = array();
 $anzahlRows = 0;
 
 // Verbindung zur Datenbank herstellen
@@ -37,6 +38,7 @@ if ($result->num_rows > 0) {
         $dtLikes[] = $row["dtLikes"];
         $dtDislikes[] = $row["dtDislikes"];
         $id2[] = $row["idImage_Video"];
+        $dtTitel[] = $row["dtTitel"];
     }
 } else {
     echo "Keine Ergebnisse gefunden.";
@@ -76,6 +78,8 @@ function openVideo(videoUrl) {
                 echo "<a onclick='openVideo(\"" . $dtVideo[$id] . "\")'><img src='" . $dtImage[$id] . "' alt='Bild $id' /></a>";
 //                echo "<a href='" . $dtVideo[$id] . "'><img src='" . $dtImage[$id] . "' alt='Bild $id' /></a>";
                 echo "<br />";
+                echo "<span id='title$id' class='likes'>" . $dtTitel[$id]."</span>";
+                echo "<br />";      
                 echo '<form method="post" action="databank.php">';
                 echo "<button type='submit' name='like' value='" . $id2[$id] . "'>Like</button>";
                 echo "<button type='submit' name='dislike' value='" . $id2[$id] . "'>Dislike</button>";
