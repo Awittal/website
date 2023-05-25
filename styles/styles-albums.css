@@ -5,13 +5,14 @@
     left: 415px;
 }
 
+
+
 .images span {
     color: #ffff;
     /*padding-left: 20%; */
     position: relative; 
-    left: 25%;
+    left: 35%;
 }
-
 
 .images {
     overflow: hidden;

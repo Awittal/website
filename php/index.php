@@ -79,7 +79,7 @@ $conn->close();
                     echo "<a onclick='openVideo(\"" . $dtVideo[$id] . "\")'><img src='" . $dtImage[$id] . "' alt='Bild $id'/></a>";
                     //                echo "<a href='" . $dtVideo[$id] . "'><img src='" . $dtImage[$id] . "' alt='Bild $id' /></a>";
                     echo "<br />";
-                    echo "<span id='title$id' class='likes'>" . $dtTitel[$id] . "</span>";
+                    echo "<span style='position: relative; left: 10%;' id='title$id' class='likes'>" . $dtTitel[$id] . "</span>";
                     echo "<br />";
                     echo '<form method="post" action="databank.php">';
                     echo "<button type='submit' name='like' value='" . $id2[$id] . "'>Like</button>";
