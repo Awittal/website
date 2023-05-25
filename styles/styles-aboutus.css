@@ -1,5 +1,4 @@
-
-.side p{
+.side p {
     font-size: 25px;
     text-align: justify;
     color: white;
@@ -13,7 +12,7 @@
 }
 
 .side {
-    background-color: rgba(0, 0, 0,.7);
+    background-color: rgba(0, 0, 0, .7);
     overflow: hidden;
     padding-bottom: 30px;
     margin-top: 150px;
@@ -21,4 +20,3 @@
     margin-right: 0;
     margin-left: 0;
 }
-

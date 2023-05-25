@@ -1,0 +1,46 @@
+.images h1 {
+    color: #ffff;
+    padding-left: 28%;
+}
+
+.images span {
+    color: #ffff;
+    padding-left: 20%;
+}
+
+
+.images {
+    overflow: hidden;
+
+}
+
+.images table {
+    overflow: hidden;
+}
+
+
+
+.images button {
+    background-color: #777777;
+    border: none;
+    color: white;
+    padding: 5% 15%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 5px;
+    position: relative;
+    left: 10%;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #0b0f0b
+}
+
+.button:active {
+    background-color: #0b0f0b;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}

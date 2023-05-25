@@ -10,10 +10,10 @@
 
 .bodystyle p {
   text-align: center;
-  color:#333;
+  color: #333;
 }
 
-.instr{
+.instr {
   color: white !important;
 }
 
@@ -28,7 +28,7 @@ h2 {
   font-size: 20px;
 }
 
-p{
+p {
   color: #f6eeee;
   font-size: 15px;
 }
@@ -37,7 +37,7 @@ p{
   overflow: hidden;
   background-color: #333;
   font-family: Arial;
-  background-color: rgba(0, 0, 0,.8);
+  background-color: rgba(0, 0, 0, .8);
   display: flex;
   justify-content: center;
 }
@@ -54,7 +54,7 @@ p{
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  background-color: rgba(0, 0, 0,.8);
+  background-color: rgba(0, 0, 0, .8);
   font-weight: bold;
   font-family: raleway-semibold, raleway, sans-serif;
 
@@ -75,7 +75,7 @@ p{
   outline: none;
   color: #FDE2F3;
   padding: 14px 16px;
-  background-color: rgba(0, 0, 0,.8);
+  background-color: rgba(0, 0, 0, .8);
   font-family: inherit;
   /* Important for vertical align on mobile phones */
   margin: 0;
@@ -118,4 +118,14 @@ p{
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+.side {
+  background-color: rgba(0, 0, 0, .7);
+  overflow: hidden;
+  padding-bottom: 30px;
+  margin-top: 150px;
+  margin-bottom: 30px;
+  margin-right: 0;
+  margin-left: 0;
 }
