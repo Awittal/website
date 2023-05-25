@@ -1,14 +1,14 @@
 .images h1 {
     color: #ffff;
 
-    position: relative; 
+    position: relative;
     left: 415px;
 }
 
 
 .images span {
     color: #ffff;
-    position: relative; 
+    position: relative;
     left: 35%;
 }
 
@@ -40,10 +40,12 @@
 
 
 .frame {
-    height: 3000px; 
-    width: 1130px; 
+    height: 3000px;
+    width: 1130px;
     border: 0;
-    position: relative; 
+    position: relative;
     left: 50%;
-    transform: translateX(-570px); 
+    transform: translateX(-570px);
+    overflow: hidden;
+
 }
