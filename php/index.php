@@ -68,7 +68,7 @@ $conn->close();
         <table>
             <link rel="stylesheet" href="../styles/styles-likeDislike.css" />
             <?php
-            // Erstelle das Grid von 5 * 2 Bildern
+            // Erstelle das Grid von 3 * ... Bildern
             $counter = 0;
             for ($i = 0; $i < ceil($anzahlRows / 3); $i++) {
                 echo "<tr>";
