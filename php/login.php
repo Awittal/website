@@ -21,11 +21,11 @@ $result = $conn->query($sql);
 if ($result->num_rows == 1) {
     // Benutzer gefunden, Überprüfung des Passworts
     $row = $result->fetch_assoc();
-      if ($password == $row['dtPasswort']){
+    if ($password == $row['dtPasswort']) {
         // Passwort stimmt überein, Benutzer erfolgreich eingeloggt
         echo "Login erfolgreich!";
         // Weitere Aktionen durchführen oder zur Startseite weiterle
-       header("Location: ../html/vuiewfv.html");
+        header("Location: ../html/vuiewfv.html");
         exit();
     } else {
         // Passwort ist falsch
@@ -35,7 +35,7 @@ if ($result->num_rows == 1) {
     // Benutzer nicht gefunden
     echo "Benutzer nicht gefunden!";
     header("Location: ../html/home.html");
-        exit();
+    exit();
 }
 
 $conn->close();

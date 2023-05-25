@@ -9,7 +9,7 @@ $dtImage = array();
 $dtLikes = array();
 $dtDislikes = array();
 $anzahlRows = 0;
-$dtTitel= array();
+$dtTitel = array();
 
 // Verbindung zur Datenbank herstellen
 $conn = new mysqli($host, $user, $password, $dbname);
@@ -38,7 +38,7 @@ if ($result->num_rows > 0) {
         $dtLikes[] = $row["dtLikes"];
         $dtDislikes[] = $row["dtDislikes"];
         $id2[] = $row["idImage_Video"];
-        $dtTitel= $row["dtTitel"];
+        $dtTitel = $row["dtTitel"];
     }
 } else {
     echo "Keine Ergebnisse gefunden.";
