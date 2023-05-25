@@ -1,0 +1,98 @@
+.float-left {
+  width: 20%;
+  float: left;
+  margin-left: 40%;
+  margin-top: 30px;
+}
+
+
+.side {
+  background-color: rgba(0, 0, 0, .7);
+  overflow: hidden;
+  padding-bottom: 30px;
+  margin-top: 150px;
+  margin-bottom: 30px;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+
+.float-right {
+  width: 20%;
+  margin-right: 5%;
+  float: right;
+  padding: 20px;
+  color: #000000;
+  margin-top: 30px;
+}
+
+.scrolldiv {
+  overflow: scroll;
+}
+
+.whatsnew {
+  height: 400px;
+  /* or any value */
+  overflow-y: auto;
+}
+
+.inner {
+  position: relative;
+  border-bottom-style: solid;
+  border-width: 1px;
+  border-spacing: 10px;
+}
+
+.newscontent {
+  background-color: rgba(255, 255, 255, 0.811);
+  border-radius: 25px;
+  padding: 10px;
+}
+
+.float-left h1 {
+  color: rgb(0, 0, 0);
+  font-size: 30px;
+}
+
+.float-left p {
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+}
+
+.float-left h2 {
+  color: black !important;
+}
+
+.float-right h2 {
+  color: #000000;
+}
+
+.thenews {
+  font-size: small;
+  margin-left: -250px;
+}
+
+.button {
+  background-color: #777777;
+  border: none;
+  color: white;
+  padding: 5% 15%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  border-radius: 5px;
+  position: relative;
+  left: 25%;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #0b0f0b
+}
+
+.button:active {
+  background-color: #0b0f0b;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}

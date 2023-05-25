@@ -1,40 +1,69 @@
-
 <!DOCTYPE html>
 <html>
 
 <head>
-    <link rel="stylesheet" href="../styles/styles-main.css">
-    <title>Über mich</title>
-    <meta charset="UTF-8">
+  <link rel="stylesheet" href="../styles/styles-main.css">
+
+
+  <link rel="stylesheet" href="../styles/styles-index.css">
+  <title>ChristianBeats</title>
+
+  <meta charset="UTF-8">
 </head>
 
 <body class="bodystyle">
 
   <!-- navigation barr -->
 
-  
-    <div class="navbar">
-        <a href="../html/home.html">Home</a>
-        <a href="../html/albums.html">Albums</a>
-        <a href="../html/aboutUs.html">About us</a>
-        <div class="dropdown">
-          <button class="dropbtn">Our Youtube Channels
-            <i class="fa fa-caret-down"></i>
-          </button>
-          <div class="dropdown-content">
-            <a href="https://www.youtube.com/channel/UCJD0vzkA41L_tgzouGlFLlQ" target="_blank">SW Bear Animation</a>
-            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Yannick</a>
-            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Noe</a>
-            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Oliver</a>
-          </div>
-        </div>
-      </div>
 
-<!--text -->
-      <p>
-        Click the images below to view content.
-      </p>
-    
+  <div class="navbar">
+    <a href="../html/home.html">Home</a>
+    <a href="../html/albums.html">Albums</a>
+    <a href="../html/aboutUs.html">About us</a>
+    <div class="dropdown">
+      <button class="dropbtn">Our Youtube Channels
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="https://www.youtube.com/channel/UCJD0vzkA41L_tgzouGlFLlQ" target="_blank">SW Bear Animation</a>
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Yannick</a>
+
+        <a href="https://www.youtube.com/@talkingpineapple5137" target="_blank">Noe</a>
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Oliver</a>
+      </div>
+    </div>
+  </div>
+
+  <!--text -->
+  <div class="side">
+
+
+    <div class="float-left">
+      <div class="newscontent">
+        <h1>Hello and welcome to our website</h1>
+        <p>
+          If you a user please select continue:
+        </p><br>
+        <button class="button" onclick="window.location.href = '../html/home.html';">Continue</button>
+      </div>
+    </div>
+
+    <div class="float-right">
+      <div class="newscontent">
+        <h2>If you are an admin, please log in here:</h2>
+
+        <form action="../php/login.php" method="POST">
+          <label for="username">Username:</label>
+          <input type="text" name="username" id="username" required><br><br>
+
+          <label for="password">Password:</label>
+          <input type="password" name="password" id="password" required><br><br>
+
+          <input type="submit" value="Login">
+        </form>
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>

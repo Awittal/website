@@ -1,0 +1,36 @@
+.container {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 2000px;
+	height: auto;
+}
+
+img {
+	padding: 10px;
+	max-height: 350px;
+	max-width: auto;
+	object-fit: cover;
+	height: 350px;
+	width: auto;
+	/* Hier kannst du die Breite des Bildes anpassen */
+}
+
+button {
+
+	padding: 20px;
+	border-radius: 50px;
+	background-color: lightgray;
+	font-size: 25px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: gray;
+	color: white;
+}
+
+.likes {
+	margin-top: 100px;
+	font-size: 25px;
+}

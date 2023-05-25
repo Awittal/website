@@ -1,0 +1,68 @@
+.images h1 {
+    color: #ffff;
+
+    position: relative; 
+    left: 415px;
+}
+
+
+
+.images span {
+    color: #ffff;
+    /*padding-left: 20%; */
+    position: relative; 
+    left: 35%;
+}
+
+.images {
+    overflow: hidden;
+    
+    
+}
+
+.images table {
+    overflow: hidden;
+
+}
+
+.images img{
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.images button {
+    background-color: #777777;
+    border: none;
+    color: white;
+    padding: 5% 15%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 5px;
+    position: relative;
+    left: 10%;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #0b0f0b
+}
+
+.button:active {
+    background-color: #0b0f0b;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+
+.frame {
+    height: 3000px; 
+    width: 1130px; 
+    border: 0;
+    position: relative; 
+    left: 50%;
+    transform: translateX(-570px); 
+}
