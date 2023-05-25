@@ -6,30 +6,11 @@
 }
 
 
-
 .images span {
     color: #ffff;
-    /*padding-left: 20%; */
     position: relative; 
     left: 35%;
 }
-
-.images {
-    overflow: hidden;
-    
-    
-}
-
-.images table {
-    overflow: hidden;
-
-}
-
-.images img{
-    justify-content: center;
-    align-items: center;
-}
-
 
 
 .images button {
